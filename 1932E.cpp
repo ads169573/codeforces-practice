@@ -12,7 +12,7 @@ using PQ =  priority_queue<T>;
 #define Pyes() cout<<"YES\n"
 #define Pno() cout<<"NO\n"
 /*std = c++2a*/
-
+vector<int>v(1e6);
 int main(){
     int N;
     cin>>N;
@@ -21,7 +21,6 @@ int main(){
         cin>>n;
         string s;
         cin>>s;
-        vector<int>v(1e6);
         for(int i=n;i;--i){
             v[i]=s[n-i]-'0'+v[i+1];
         }
@@ -31,7 +30,7 @@ int main(){
             v[i]%=10;
             p=i;
         }
-        for(int i=p;i;--i) cout<<v[i];
+        for(int i=p;i;--i) cout<<v[i],v[i]=0;
         cout<<'\n';
 	}
     return 0;
