@@ -1,6 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
+#define LL long long
+#define PB push_back
+#define PINT pair<int,int>
+template <class T>
+using  RPQ =  priority_queue<T,vector<T>,greater<T>>;
+template <class T>
+using PQ =  priority_queue<T>;
+#define F first
+#define S second
+#define Pyes() cout<<"YES\n"
+#define Pno() cout<<"NO\n"
+/*std = c++2a*/
 bool p(string &s,int m){
     int cnt=0;
     for(int i=0;i<s.size();++i){

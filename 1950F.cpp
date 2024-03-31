@@ -1,6 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
+#define LL long long
+#define PB push_back
+#define PINT pair<int,int>
+template <class T>
+using  RPQ =  priority_queue<T,vector<T>,greater<T>>;
+template <class T>
+using PQ =  priority_queue<T>;
+#define F first
+#define S second
+#define Pyes() cout<<"YES\n"
+#define Pno() cout<<"NO\n"
+/*std = c++2a*/
 
 int p(int a,int b,int cnt){
     if(a==0&&b==0) return 0;
