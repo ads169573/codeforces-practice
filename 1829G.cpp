@@ -16,7 +16,7 @@ int main()
 {	
 	int N;
     vector<vector<LL>> v(2001,vector<LL>(2001));
-    int k=0;
+    LL k=0;
     for(int i =1;i<=2000;++i){
         for(int j=1;j<=i;++j){
             k++;
