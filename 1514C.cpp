@@ -20,7 +20,7 @@ int main()
         int n;
         cin>>n;
         vector<int> ret;
-        int ans=1;
+        LL ans=1ll;
         for(int i=1;i<=n-1;++i){
             if(gcd(i,n)==1){
                ret.push_back(i); 
