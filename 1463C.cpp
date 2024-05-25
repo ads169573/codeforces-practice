@@ -19,13 +19,13 @@ int main()
 {	
 	int N;
     cin>>N;
-    vector<int> a(1e5+5);
-    vector<int> b(1e5+5);
+    vector<LL> a(1e5+5);
+    vector<LL> b(1e5+5);
 	while(N--){
         int n;
         cin>>n;
         for(int i=1;i<=n;++i) cin>>a[i]>>b[i];
-        int p=0,q=0,ans=0;
+        LL p=0,q=0,ans=0;
         for(int i=1,j;i<=n;++i){
             if(p==q) q=b[i];
             if(i==n||a[i+1]-a[i]>=abs(p-q)) j=q;
